@@ -30,4 +30,11 @@ public class WaroftheWorldsActivity extends Activity {
 		Log.e("War of the Worlds", "onPause");
 		super.onPause();
 	}
+
+	@Override
+	protected void onStop() {
+		Log.e("War of the Worlds", "onStop");
+		super.onStop();
+		finish();
+	}
 }

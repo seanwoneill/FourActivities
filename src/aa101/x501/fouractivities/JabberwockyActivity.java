@@ -19,16 +19,26 @@ public class JabberwockyActivity extends Activity {
 		Log.e("Jabberwocky", "onCreate");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_jabberwocky);
-		WebView jabPoint = (WebView) findViewById(R.id.jabWebView1);
+		jabPoint = (WebView) findViewById(R.id.jabWebView1);
 		jabPoint.getSettings().setBuiltInZoomControls(true);
 		jabPoint.loadUrl("file:///android_asset/jabberwocky.html");
 	}
 
+//	public void click2Beast(View v) {
+//		/*
+//		 * While this works by loading a new activity containing only a picture,
+//		 * the instructions state to open a picture within the existing webview.
+//		 */
+//		Log.e("Jabberwocky", "clickWafflingBeast");
+//		Intent grumpyIntent = new Intent(JabberwockyActivity.this, Grumpy.class);
+//		JabberwockyActivity.this.startActivity(grumpyIntent);
+//	}
+
 	public void click2Beast(View v) {
 		Log.e("Jabberwocky", "clickWafflingBeast");
-		Intent grumpyIntent = new Intent(JabberwockyActivity.this, Grumpy.class);
-		JabberwockyActivity.this.startActivity(grumpyIntent);
-
+		jabPoint = (WebView) findViewById(R.id.jabWebView1);
+		jabPoint.getSettings().setAllowFileAccess(true);
+		jabPoint.loadUrl("file:///android_asset/grumpycat_hdpi.jpg");
 	}
 
 	public void clickToWiki(View v) {
@@ -59,5 +69,6 @@ public class JabberwockyActivity extends Activity {
 		jabPlayer.stop();
 		jabPlayer.release();
 		super.onStop();
+		finish();
 	}
 }

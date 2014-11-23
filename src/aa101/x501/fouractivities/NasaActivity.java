@@ -30,4 +30,11 @@ public class NasaActivity extends Activity {
 		Log.e("NASA", "onPause");
 		super.onPause();
 	}
+
+	@Override
+	protected void onStop() {
+		Log.e("NASA", "onStop");
+		super.onStop();
+		finish();
+	}
 }
