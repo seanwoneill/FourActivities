@@ -22,36 +22,32 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int grumpycat_hdpi=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int jabberwocky_ldpi=0x7f020002;
-        public static final int nasa_hdpi=0x7f020003;
-        public static final int rollingball_hdmi=0x7f020004;
-        public static final int war_of_the_worlds_cover_hdpi=0x7f020005;
+        public static final int ic_launcher=0x7f020000;
+        public static final int jabberwocky_ldpi=0x7f020001;
+        public static final int nasa_hdpi=0x7f020002;
+        public static final int rollingball_hdmi=0x7f020003;
+        public static final int war_of_the_worlds_cover_hdpi=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f090007;
-        public static final int ballWebView1=0x7f090005;
-        public static final int frumptiousBeast=0x7f090003;
-        public static final int grumpyCat=0x7f090000;
-        public static final int jabWebView1=0x7f090002;
-        public static final int nasaWebView1=0x7f090004;
-        public static final int warWebView1=0x7f090006;
-        public static final int wikipedia=0x7f090001;
+        public static final int action_settings=0x7f090006;
+        public static final int ballWebView1=0x7f090004;
+        public static final int frumptiousBeast=0x7f090002;
+        public static final int jabWebView1=0x7f090001;
+        public static final int nasaWebView1=0x7f090003;
+        public static final int warWebView1=0x7f090005;
+        public static final int wikipedia=0x7f090000;
     }
     public static final class layout {
-        public static final int activity_grumpy=0x7f030000;
-        public static final int activity_jabberwocky=0x7f030001;
-        public static final int activity_nasa=0x7f030002;
-        public static final int activity_rolling_ball=0x7f030003;
-        public static final int activity_war_of_the_worlds=0x7f030004;
+        public static final int activity_jabberwocky=0x7f030000;
+        public static final int activity_nasa=0x7f030001;
+        public static final int activity_rolling_ball=0x7f030002;
+        public static final int activity_war_of_the_worlds=0x7f030003;
     }
     public static final class menu {
         public static final int jabberwocky=0x7f080000;
     }
     public static final class raw {
-        public static final int grumpycat_hdpi=0x7f040000;
-        public static final int jm2halloween=0x7f040001;
+        public static final int jm2halloween=0x7f040000;
     }
     public static final class string {
         public static final int Jabberwocky=0x7f06000c;

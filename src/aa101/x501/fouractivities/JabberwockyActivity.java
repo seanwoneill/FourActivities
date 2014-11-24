@@ -24,16 +24,6 @@ public class JabberwockyActivity extends Activity {
 		jabPoint.loadUrl("file:///android_asset/jabberwocky.html");
 	}
 
-//	public void click2Beast(View v) {
-//		/*
-//		 * While this works by loading a new activity containing only a picture,
-//		 * the instructions state to open a picture within the existing webview.
-//		 */
-//		Log.e("Jabberwocky", "clickWafflingBeast");
-//		Intent grumpyIntent = new Intent(JabberwockyActivity.this, Grumpy.class);
-//		JabberwockyActivity.this.startActivity(grumpyIntent);
-//	}
-
 	public void click2Beast(View v) {
 		Log.e("Jabberwocky", "clickWafflingBeast");
 		jabPoint = (WebView) findViewById(R.id.jabWebView1);
@@ -52,7 +42,6 @@ public class JabberwockyActivity extends Activity {
 	protected void onResume() {
 		Log.e("Jabberwocky", "onResume");
 		jabPlayer = MediaPlayer.create(this, R.raw.jm2halloween);
-		// jabPlayer = MediaPlayer.create(this, R.assets.jm2halloween);
 		jabPlayer.start();
 		super.onResume();
 	}
